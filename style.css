@@ -294,10 +294,15 @@ padding-top: 16px;
 
 .features__description {
   font-size: 16px;
-  color: #1a202c;
+  color: #718096;
   line-height: 1.5;
 
 }
+
+  .feature-card__text {
+    color: #718096;
+    }
+
 
 .features__cards {
   display: flex;
@@ -1187,9 +1192,6 @@ left: -110px;
       max-width: 400px;
     }
 
-    .feature__card-icon {
-      height: 24px;
-      width: 24px;
     }
 
 
@@ -1297,7 +1299,7 @@ cursor: pointer;
   align-items: center;
   margin: 0;
  }
-}
+
 
 @media (max-width: 550px) {
   .hero,
@@ -1320,8 +1322,48 @@ cursor: pointer;
   }
   body {
     overflow-x: hidden;
-  }
+  
+    }
+      .features {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .feature-card__icon {
+          padding: 30px;
+          display: flex;
+         align-items: center;
+          justify-content: center;
+      }
+          
+      .feature-card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+      }
 
+        .features__cards {
+      align-items: center;
+    
+        }
+      
+
+        .feature-card__title {
+          font-size: 32px;
+          
+          
+        }
+        
+
+
+      .feature-card__icon img {
+        width: 24px;
+        height: 24px;
+        
+      }
 
   .quality__row {
     flex-direction: column-reverse;
@@ -1366,6 +1408,10 @@ cursor: pointer;
 
 
 }
+.nav__links li:last-child {
+  margin-left: 0;
+}
+
   .navbar__stack {
   display: flex;
   flex-direction: column;
@@ -1396,7 +1442,17 @@ cursor: pointer;
   gap: 16px;
   transform: translateX(110%);
   transition: transform 0.3s ease;
+  
 }
+
+.navbar__mobile-menu a {
+  font-size: 1.25rem;
+  text-align: center;
+
+ }
+
+
+
 .navbar__button-menu {
   border-radius: 999px;
   background: #6415ff;
@@ -1406,14 +1462,19 @@ cursor: pointer;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
-
-
+  cursor: pointer;
 }
 
+
+.navbar__button-menu:hover {
+  background:#4e10ca;
+  transition: all 300ms ease;
+}
 
 .navbar__mobile-menu.active {
   display: flex;
   transform: translateX(0);
+  text-align: center;
 }   
 
 .navbar__mobile-menu--close {
