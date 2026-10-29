@@ -1158,7 +1158,9 @@ left: -110px;
     border: 2px solid #7c8ba1;
     height: 45px;
   }
-
+  body {
+    overflow-x: hidden;
+  }
   .hero__button {
     border-radius: 999px; 
     padding: 12px 24px;
@@ -1274,6 +1276,13 @@ color: #656668;
 cursor: pointer;
   
 }
+ .footer__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+ }
+
+
 }
 
 @media (max-width: 550px) {
@@ -1295,6 +1304,10 @@ cursor: pointer;
     max-width: 100%;
   
   }
+  body {
+    overflow-x: hidden;
+  }
+
 
   .quality__row {
     flex-direction: column-reverse;
@@ -1403,6 +1416,12 @@ cursor: pointer;
 
  .nav__right {
 display: none;
+ }
+
+  .footer__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
  }
 }
 
