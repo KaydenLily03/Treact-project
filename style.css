@@ -1189,9 +1189,7 @@ left: -110px;
     height: 80px;
     position: static;
     width: 100%;
-  }
-  body {
-    overflow-x: hidden;
+  
   }
   .hero__button {
     border-radius: 999px;
@@ -1452,23 +1450,38 @@ cursor: pointer;
       }
 
      .hero__email {
-    flex-direction:column;
-    gap: 16px;
-    border: 2px solid #7c8ba1;
-    padding: 0;
-    height: 50px;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    max-width: 400px;
+    padding: 24px;
+    height: 60px;
+    z-index: auto;
+    height: auto;
+    position: static;
+    gap: 12px;
+     }
 
-
-  }
 
   .hero__button {
     border-radius: 999px; 
-    padding: 12px 24px;
+    padding: 16px 26px;
     width: 100%;
-
+    
+  }
+.hero__input {
+  font-size: 16px;
+  padding: 16px 22px;
+  border: 2px solid #e3e8ed;
+  width: 100%;
+  text-align: left;
+  background: white;
+  
 
 
 }
+
+
 .nav__links li:last-child {
   margin-left: 0;
 }
