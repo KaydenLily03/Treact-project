@@ -1144,7 +1144,6 @@ left: -110px;
 
 @media (max-width: 768px) {
   .hero,
-  .quality__row,
   .steps__row,
   .values__container,
   .review,
@@ -1168,8 +1167,30 @@ left: -110px;
    }
     .hero__input {
       height: 40px;
+    }
+    .quality__right img {
+      max-width: 100%;
+      height: auto;
 
     }
+    .quality__row {
+      flex-direction: column-reverse;
+    }
+
+    .features__cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    .feature-card {
+      max-width: 400px;
+    }
+
+    .feature__card-icon {
+      height: 24px;
+      width: 24px;
+    }
+
+
     .hero__left,
   .hero__right,
   .quality__left,
@@ -1180,6 +1201,7 @@ left: -110px;
   .pricing__plan {
     width: 100%;
     max-width: 100%;
+    
   }
   .navbar__stack {
   display: flex;
@@ -1255,8 +1277,7 @@ cursor: pointer;
 }
 
 @media (max-width: 550px) {
-  .hero
-  .quality__row,
+  .hero,
   .steps__row,
   .values__container,
   .review,
@@ -1265,7 +1286,6 @@ cursor: pointer;
     }
     .hero__left,
   .hero__right,
-  .quality__left,
   .quality__right,
   .steps__left,
   .steps__right,
@@ -1273,7 +1293,27 @@ cursor: pointer;
   .pricing__plan {
     width: 100%;
     max-width: 100%;
+  
   }
+
+  .quality__row {
+    flex-direction: column-reverse;
+  }
+
+  .quality__left {
+    text-align: center;
+
+  }
+    .quality__button {
+      margin: 0 auto;
+    }
+
+
+  .quality__right img {
+      max-width: 100%;
+      height: auto;
+    }
+
 
       .navbar__mobile-menu , .nav__links {
       align-items: center;
