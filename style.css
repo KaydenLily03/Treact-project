@@ -1185,13 +1185,29 @@ left: -110px;
     }
 
     .features__cards {
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  
+      gap: 24px;
     }
+    
     .feature-card {
       max-width: 400px;
+
     }
 
+    .feature-card__icon {
+      padding: 24px;
+      display: flex;
+    }
+
+    .feature-card__title {
+      font-size: 28px;
+    }
+
+    .feature-card__icon img {
+      width: 30px;
+      height: 30px;
     }
 
 
@@ -1264,8 +1280,17 @@ left: -110px;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
-  
 }
+
+.nav__links li:last-child {
+  margin-left: 0;
+}
+.navbar__mobile-menu a {
+  font-size: 1.3rem;
+  text-align: center;
+
+ }
+
 
 .navbar__mobile-menu--close {
 position: absolute;
@@ -1300,7 +1325,7 @@ cursor: pointer;
   margin: 0;
  }
 
-
+}
 @media (max-width: 550px) {
   .hero,
   .steps__row,
@@ -1347,6 +1372,7 @@ cursor: pointer;
 
         .features__cards {
       align-items: center;
+      grid-template-columns: 1fr;
     
         }
       
